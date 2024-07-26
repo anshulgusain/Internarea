@@ -1,0 +1,85 @@
+*{
+    margin: 0;   
+    padding: 0;
+   }
+   img{
+width: 110px;
+
+margin: 7px;
+margin-left: 20px;
+   }
+
+
+   nav{
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 0 5px -2px;
+    overflow: hidden;
+   }
+   ul{
+    display: flex;
+   }
+   .elem{
+    display: flex;
+    margin-left: 40px;
+    margin-top: 20px;
+   
+   }
+   .elem p{
+    margin: 10px;
+   }
+   .search{
+    position: relative;
+    left: 28%;
+    font-weight: 300;
+    
+   }
+   .search input{
+    padding: 5px;
+    margin-top: 20px;
+    
+   }
+
+   .auth{
+    position: relative;
+    margin-top: 2%;
+    left: 30%;
+   }
+   .auth2{
+    margin-left: 15px;
+    border: 1px solid blue;
+    padding: 2px;
+    width: 80px;
+    background-color: rgb(14, 143, 218);
+    color: white;
+   }
+   .auth1{
+    margin-right: 15px;
+    border: 1px solid blue;
+    padding: 2px;
+    width: 80px;
+   }
+   #hire{
+   position: relative;
+   left: 31%;
+   margin-top: 30px;
+   font-weight: 600;
+   }
+   .admin{
+    position: relative;
+    left: 32%;
+    margin-top: 25px;
+
+    border: 1px solid blue;
+    padding: 3px 3px 5px 14px  ;
+    width: 80px;
+    height: 30px;
+    background-color: rgb(14, 143, 218);
+    color: white;
+   }
+
+   @media screen and (max-width: 768px) {
+    .nav1{
+     display: none;
+    }
+   }
