@@ -1,7 +1,9 @@
 import React from 'react'
 import logo from "../Assets/logo.png"
 import "./Navbar.css"
+import { useNavigate } from 'react-router-dom'
 function Navbar() {
+  const navigate=useNavigate()
   return (
     <nav className='nav1'>
 <ul>
@@ -10,7 +12,9 @@ function Navbar() {
       </div>
 
       <div className="elem">
-        <p>Internships<i class="bi bi-caret-down-fill"></i></p>
+        <p>Internships<i class="bi bi-caret-down-fill" onClick={()=>{
+          navigate("/internship")
+        }}></i></p>
         <p>Jobs<i class="bi bi-caret-down-fill"></i></p>
       </div>
 
