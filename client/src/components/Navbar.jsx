@@ -1,7 +1,7 @@
 import React from 'react'
 import logo from "../Assets/logo.png"
 import "./Navbar.css"
-import { useNavigate } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 function Navbar() {
   const navigate=useNavigate()
   return (
@@ -12,9 +12,8 @@ function Navbar() {
       </div>
 
       <div className="elem">
-        <p>Internships<i class="bi bi-caret-down-fill" onClick={()=>{
-          navigate("/internship")
-        }}></i></p>
+      <Link to={'/internship'}><p>Internships<i class="bi bi-caret-down-fill" 
+        ></i></p></Link>  
         <p>Jobs<i class="bi bi-caret-down-fill"></i></p>
       </div>
 
@@ -25,7 +24,7 @@ function Navbar() {
 
       <div className="auth">
         <button className='auth1'>Login</button>
-        <button className='auth2'>Register</button>
+       <Link to={"/register"} ><button className='auth2'>Register</button></Link>
       </div>
       
        <div id='hire' className="flex mt-7">
